@@ -350,7 +350,6 @@ body {
 
 .subscribe {
   flex: 1;
-  max-width: 300px;
   text-align: left;
 }
 
