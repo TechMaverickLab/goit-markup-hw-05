@@ -175,6 +175,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
+  padding-bottom: 8px;
 }
 
 /* ============================================================================================================= */
@@ -330,10 +331,13 @@ body {
   text-align: left;
 }
 
-.text {
+.page-footer .text {
   color: var(--modal-overlay-color);
   font-size: 14px;
   line-height: 1.6;
+  padding-top: 18px;
+
+
 }
 
 .social {
@@ -359,7 +363,7 @@ body {
 
 .subscribe-form {
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 
 .subscribe-email {
@@ -369,14 +373,15 @@ body {
   padding-left: 16px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.6);
+  color:  var(--hero-text);
   user-select: none;
   background-color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--hero-text);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  height: 40px;
 }
 
 .subscribe-email:focus,
@@ -748,6 +753,7 @@ body {
   border: 1px solid var(--accent-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-top: none;
+  
 }
 
 .finger-item:hover,
