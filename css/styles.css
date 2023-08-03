@@ -303,8 +303,11 @@ body {
 }
 
 
-
 /* FOOTER */
+.footer-logo .logo-second {
+  color: var(--light-color);
+}
+
 
 .page-footer {
   padding-top: 100px;
@@ -334,9 +337,11 @@ body {
 }
 
 .social {
+  display: block;
   flex: 1;
   max-width: 300px;
   text-align: left;
+  margin-left: 120px;
 }
 
 .subscribe {
@@ -398,7 +403,6 @@ body {
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 24px;
 }
 
@@ -414,6 +418,8 @@ body {
 .social-title,
 .subscribe-text {
   margin-bottom: 16px;
+  
+
 }
 
 .social-link {
