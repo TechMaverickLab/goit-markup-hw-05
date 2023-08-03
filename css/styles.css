@@ -355,8 +355,8 @@ body {
 }
 
 .subscribe-text {
-  color: var(--modal-overlay-color);
-  font-size: 18px;
+  color: var(--hero-text);
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -391,13 +391,19 @@ body {
 }
 
 .subscribe-button {
-  width: 165px;
+  min-width: 165px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 8px 24px;
   gap: 16px;
+}
+
+.subscribe-form-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
 }
 
 .subscribe-button:hover,
