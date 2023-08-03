@@ -779,6 +779,7 @@ body {
 
 .modal-backdrop {
   position: fixed;
+  padding: 72px 24px 24px 24px; 
   top: 0;
   left: 0;
   width: 100%;
