@@ -54,6 +54,8 @@
         refs.emailInput.value = "";
         refs.commentInput.value = "";
         refs.modalCheckbox.checked = false;
+        // Disable the submit button
+        refs.modalForm.querySelector('button[type="submit"]').disabled = true;
     }
   }
 })();
