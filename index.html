@@ -510,9 +510,16 @@
 
         <!-- Agreement field -->
         <div class="modal-form-agreement">
-          <input type="checkbox" id="user-privacy" class="visually-hidden" value="true" name="user-privacy" />
+          <input type="checkbox" id="user-privacy" class="checkbox" value="true" name="user-privacy" />
           <label for="user-privacy" class="checkbox-label">
-            <span class="modal-form-checkbox"></span>
+            <span class="checkbox-container">
+              <svg class="unchecked-icon">
+                <use xlink:href="icons.svg#icon-checkbox-frame"></use>
+              </svg>
+              <svg class="checked-icon">
+                <use xlink:href="icons.svg#icon-checkbox-click"></use>
+              </svg>
+            </span>
             <span>I accept the terms and conditions of the <a class="modal-form-link" href="#">Privacy Policy</a></span>
           </label>
         </div>
@@ -522,11 +529,11 @@
         <button class="modal-form-button" type="button" data-modal>
           Send
         </button>
-
+      </form>
     </div>
   </div>
 
-  </div>
+
 
   <script src="./js/header.js"></script>
 
