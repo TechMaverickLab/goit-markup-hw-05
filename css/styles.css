@@ -979,17 +979,24 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .checkbox-container {
   width: 16px;
   height: 16px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-right: 10px;
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent; 
+
 }
 
 .unchecked-icon,
 .checked-icon {
   position: absolute;
   transition: opacity 0.3s ease;
+  border: none; 
+  fill: #F4F4FD;
 }
 
 .unchecked-icon {
@@ -1012,7 +1019,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 24px;
 }
+
 
 .modal-form-link {
 color: var(--primary-brand-color);
@@ -1029,7 +1038,8 @@ color: var(--primary-brand-color);
   align-items: center;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 1.17;
+letter-spacing: 0.04em;
   color: var(--subtle-text-color);
 }
 
