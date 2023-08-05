@@ -994,10 +994,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .checked-icon {
   position: absolute;
   transition: opacity 0.3s ease;
-  border: none; 
+  
+
+  
   width: 16px;
   height: 16px;
-  fill: #F4F4FD;
 }
 
 .unchecked-icon {
@@ -1006,6 +1007,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .checked-icon {
   opacity: 0; 
+  background-color: #404bbf;
+  fill: #F4F4FD;
+  border: none; 
 }
 
 .checkbox:checked + .checkbox-label .unchecked-icon {
