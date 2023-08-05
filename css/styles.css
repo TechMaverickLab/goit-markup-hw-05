@@ -1050,8 +1050,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
-  flex-direction: row-reverse;
-  justify-content: start;
+  
 }
 
 .visually-hiddenchecked {
