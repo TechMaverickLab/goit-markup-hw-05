@@ -471,7 +471,7 @@
         <!-- Name field  -->
         <div class="modal-form-group">
           <label class="modal-form-label" for="user_name">Name</label>
-          <div modal-form-text>
+          <div class="modal-form-text">
             <input class="modal-form-field" type="text" id="user_name" required
               pattern="^[a-zA-Z\u0400-\u04FF\u0590-\u05FF\u2E80-\u2FD5\s]+$" minlength="2">
             <svg class="modal-form-icon" width="18px" height="24px">
@@ -483,7 +483,7 @@
         <!-- Phone field  -->
         <div class="modal-form-group">
           <label class="modal-form-label" for="user_phone">Phone</label>
-          <div modal-form-textiv>
+          <div class="modal-form-text">
             <input class="modal-form-field" type="tel" id="user_phone" required pattern="^\d{10,15}$">
             <svg class="modal-form-icon" width="18px" height="24px">
               <use href="./images/icons.svg#icon-phone"></use>
@@ -495,7 +495,7 @@
         <!-- Email field  -->
         <div class="modal-form-group">
           <label class="modal-form-label" for="user_email">Email</label>
-          <div modal-form-text>
+          <div class="modal-form-text">
             <input class="modal-form-field" type="email" id="user_email" required
               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
             <svg class="modal-form-icon" width="18px" height="24px">
@@ -513,8 +513,7 @@
 
         <!-- Agreement field -->
         <div class="modal-form-agreement">
-          <input class="visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" class="checkbox"
-            value="true" />
+          <input class="visually-hidden checkbox" type="checkbox" id="user-privacy" name="user-privacy" value="true" />
           <label for="user-privacy" class="checkbox-label">
             <span class="checkbox-container">
               <svg class="unchecked-icon" width="16" height="16">
