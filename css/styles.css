@@ -902,6 +902,10 @@ body {
   margin-bottom: 8px;
 }
 
+.modal-form-text{
+position: relative;
+}
+
 .modal-form-field {
   display: block;
   width: 100%;
@@ -1026,6 +1030,6 @@ color: var(--primary-brand-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
-  color: var(--lightslate, #8E8F99);
+  color: var(--subtle-text-color);
 }
 
