@@ -437,16 +437,12 @@
       </div>
 
       <div class="subscribe">
-
         <p class="subscribe-text">Subscribe</p>
-
         <form class="subscribe-form" name="subscribe-form" autocomplete="on">
-
           <label>
             <input class="subscribe-email" type="email" name="subscribe-email" required id="subscribe-email"
               placeholder="E-mail">
           </label>
-
 
           <button class="subscribe-button button" type="submit">Subscribe<svg class="subscribe-icon" width="24"
               height="24">
@@ -461,7 +457,6 @@
 
 
   <!-- MODAL -->
-
   <div class="modal-backdrop is-hidden" data-modal>
     <div class="modal-container">
       <button class="modal-btn" type="button" data-modal-close>
@@ -473,11 +468,11 @@
       <p class="modal-title">Leave your contacts and we will call you back</p>
 
       <form class="modal-form" name="modal_form">
-
         <!-- Name field  -->
         <label class="modal-form-label" for="user_name">Name</label>
         <div class="modal-form-group">
-          <input class="modal-form-field" type="text" id="user_name" required minlength="2">
+          <input class="modal-form-field" type="text" id="user_name" required
+            pattern="^[a-zA-Z\u0400-\u04FF\u0590-\u05FF\u2E80-\u2FD5\s]+$" minlength="2">
           <svg class="modal-form-icon" width="18px" height="24px">
             <use href="./images/icons.svg#icon-name"></use>
           </svg>
@@ -486,16 +481,17 @@
         <!-- Phone field  -->
         <label class="modal-form-label" for="user_phone">Phone</label>
         <div class="modal-form-group">
-          <input class="modal-form-field" type="tel" id="user_phone" required>
+          <input class="modal-form-field" type="tel" id="user_phone" required pattern="^\d{10,15}$">
           <svg class="modal-form-icon" width="18px" height="24px">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
         </div>
 
-        <!-- Emaile field  -->
+        <!-- Email field  -->
         <label class="modal-form-label" for="user_email">Email</label>
         <div class="modal-form-group">
-          <input class="modal-form-field" type="email" id="user_email" required>
+          <input class="modal-form-field" type="email" id="user_email" required
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
           <svg class="modal-form-icon" width="18px" height="24px">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
@@ -504,34 +500,34 @@
         <!-- Comment field  -->
         <div class="modal-comment">
           <label class="modal-form-label" for="user_comment">Comment</label>
-          <textarea class="modal-form-comment" name="user_comment" id="user_comment" rows="6"
+          <textarea class="modal-form-comment" name="user_comment" id="user_comment" rows="6" required
             placeholder="Text input"></textarea>
         </div>
 
         <!-- Agreement field -->
         <div class="modal-form-agreement">
-          <input type="checkbox" id="user-privacy" class="checkbox" value="true" name="user-privacy" />
+          <input type="checkbox" id="user-privacy" class="checkbox" />
           <label for="user-privacy" class="checkbox-label">
             <span class="checkbox-container">
-              <svg class="unchecked-icon">
-                <use xlink:href="icons.svg#icon-checkbox-frame"></use>
+              <svg class="unchecked-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
-              <svg class="checked-icon">
-                <use xlink:href="icons.svg#icon-checkbox-click"></use>
+              <svg class="checked-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-checkbox-click"></use>
               </svg>
             </span>
             <span>I accept the terms and conditions of the <a class="modal-form-link" href="#">Privacy Policy</a></span>
           </label>
         </div>
 
-
         <!-- Send button -->
-        <button class="modal-form-button" type="button" data-modal>
+        <button class="modal-form-button" type="submit" data-modal>
           Send
         </button>
       </form>
     </div>
   </div>
+
 
 
 

@@ -44,13 +44,13 @@ body {
   letter-spacing: 0.02em;
 }
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
   border: none;
-}
+} */
 
 /* ==================================================================== */
 /* KOLOR */
@@ -960,51 +960,59 @@ border-radius: var(--radius-butoon);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-button:hover,
-.modal-form-button:focus {
-  background-color: #404BBF;
+.modal-form-button:hover {
+  background-color: var(--pressed-state-color);
+}
+
+.modal-form-button:disabled {
+  background-color: var(--primary-brand-color);
+  cursor: not-allowed;
+}
+
+.checkbox {
+  display: none;
 }
 
 .checkbox-container {
   width: 16px;
   height: 16px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  position: relative;
+  margin-right: 10px;
 }
 
-.checkbox {
-  appearance: none; /* Remove default checkbox styling */
-  display: none; /* Hide the actual checkbox */
+.unchecked-icon,
+.checked-icon {
+  position: absolute;
+  transition: opacity 0.3s ease;
 }
 
-.checkbox-label .unchecked-icon {
-  display: block; /* Show the unchecked icon by default */
+.unchecked-icon {
+  opacity: 1; 
 }
 
-.checkbox-label .checked-icon {
-  display: none; /* Hide the checked icon by default */
+.checked-icon {
+  opacity: 0; 
 }
 
 .checkbox:checked + .checkbox-label .unchecked-icon {
-  display: none; /* Hide the unchecked icon when checked */
+  opacity: 0; 
 }
 
 .checkbox:checked + .checkbox-label .checked-icon {
-  display: block; /* Show the checked icon when checked */
-  fill: #4D5AE5; /* Color for the checked state */
+  opacity: 1;
 }
 
 .modal-form-agreement {
   display: flex;
-  gap: 8px;
-  margin-bottom: 24px;
   align-items: center;
+  gap: 8px;
 }
 
 .modal-form-link {
-  color: var(--primary-brand-color);
+color: var(--primary-brand-color);
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
@@ -1021,3 +1029,4 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 14px;
   color: var(--lightslate, #8E8F99);
 }
+
