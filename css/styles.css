@@ -28,7 +28,7 @@ img {
   text-decoration: none;
   outline: none;
   display: block;
-  padding-top: 24px;
+  /* padding-top: 24px; */
   padding-bottom: 28px;
   position: relative;
 }
@@ -149,7 +149,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 28px;
+  /* padding-bottom: 28px; */
   position: relative;
   color: var(--dark-color);
 }
