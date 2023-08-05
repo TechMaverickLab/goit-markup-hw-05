@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var closeModalBtn = document.querySelector("[data-modal-close]");
   var modal = document.querySelector("[data-modal]");
   var modalForm = document.querySelector(".modal-form");
-  var nameField = document.querySelector("#user_name");
-  var phoneField = document.querySelector("#user_phone");
-  var emailField = document.querySelector("#user_email");
-  var commentField = document.querySelector("#user_comment");
+  var nameField = document.querySelector("#user-name");
+  var phoneField = document.querySelector("#user-phone");
+  var emailField = document.querySelector("#user-email");
+  var commentField = document.querySelector("#user-comment");
   var checkbox = document.querySelector("#user-privacy");
   var sendButton = document.querySelector(".modal-form-button");
 

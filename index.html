@@ -470,9 +470,9 @@
       <form class="modal-form" name="modal_form">
         <!-- Name field  -->
         <div class="modal-form-group">
-          <label class="modal-form-label" for="user_name">Name</label>
+          <label class="modal-form-label" for="user-name">Name</label>
           <div class="modal-form-text">
-            <input class="modal-form-field" type="text" id="user_name" name="user-name" required
+            <input class="modal-form-field" type="text" id="user-name" name="user-name" required
               pattern="^[a-zA-Z\u0400-\u04FF\u0590-\u05FF\u2E80-\u2FD5\s]+$" minlength="2">
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-name"></use>
@@ -482,9 +482,9 @@
 
         <!-- Phone field  -->
         <div class="modal-form-group">
-          <label class="modal-form-label" for="user_phone">Phone</label>
+          <label class="modal-form-label" for="user-phone">Phone</label>
           <div class="modal-form-text">
-            <input class="modal-form-field" type="tel" id="user_phone" required pattern="^\d{10,15}$">
+            <input class="modal-form-field" type="tel" id="user-phone" name="user-phone" required pattern="^\d{10,15}$">
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -494,9 +494,9 @@
 
         <!-- Email field  -->
         <div class="modal-form-group">
-          <label class="modal-form-label" for="user_email">Email</label>
+          <label class="modal-form-label" for="user-email">Email</label>
           <div class="modal-form-text">
-            <input class="modal-form-field" type="email" id="user_email" required
+            <input class="modal-form-field" type="email" id="user-email" name="user-email" required
               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email"></use>
@@ -506,8 +506,8 @@
 
         <!-- Comment field  -->
         <div class="modal-comment">
-          <label class="modal-form-label" for="user_comment">Comment</label>
-          <textarea class="modal-form-comment" name="user_comment" id="user_comment" rows="6" required
+          <label class="modal-form-label" for="user-comment">Comment</label>
+          <textarea class="modal-form-comment" name="user-comment" id="user-comment" rows="6" required
             placeholder="Text input"></textarea>
         </div>
 
@@ -516,10 +516,10 @@
           <input class="visually-hidden checkbox" type="checkbox" id="user-privacy" name="user-privacy" value="true" />
           <label for="user-privacy" class="checkbox-label">
             <span class="checkbox-container">
-              <svg class="unchecked-icon" width="16" height="16">
+              <svg class="unchecked-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
-              <svg class="checked-icon" width="16" height="16">
+              <svg class="checked-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-checkbox-click"></use>
               </svg>
             </span>
