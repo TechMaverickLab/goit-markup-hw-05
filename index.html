@@ -489,48 +489,49 @@
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
+        </div>
 
 
-          <!-- Email field  -->
-          <div class="modal-form-group">
-            <label class="modal-form-label" for="user_email">Email</label>
-            <div modal-form-text>
-              <input class="modal-form-field" type="email" id="user_email" required
-                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-              <svg class="modal-form-icon" width="18px" height="24px">
-                <use href="./images/icons.svg#icon-email"></use>
+        <!-- Email field  -->
+        <div class="modal-form-group">
+          <label class="modal-form-label" for="user_email">Email</label>
+          <div modal-form-text>
+            <input class="modal-form-field" type="email" id="user_email" required
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <svg class="modal-form-icon" width="18px" height="24px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Comment field  -->
+        <div class="modal-comment">
+          <label class="modal-form-label" for="user_comment">Comment</label>
+          <textarea class="modal-form-comment" name="user_comment" id="user_comment" rows="6" required
+            placeholder="Text input"></textarea>
+        </div>
+
+        <!-- Agreement field -->
+        <div class="modal-form-agreement">
+          <input type="checkbox" id="user-privacy" class="checkbox" />
+          <label for="user-privacy" class="checkbox-label">
+            <span class="checkbox-container">
+              <svg class="unchecked-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
-            </div>
-          </div>
+              <svg class="checked-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-checkbox-click"></use>
+              </svg>
+            </span>
+            <span>I accept the terms and conditions of the <a class="modal-form-link" href="#">Privacy
+                Policy</a></span>
+          </label>
+        </div>
 
-          <!-- Comment field  -->
-          <div class="modal-comment">
-            <label class="modal-form-label" for="user_comment">Comment</label>
-            <textarea class="modal-form-comment" name="user_comment" id="user_comment" rows="6" required
-              placeholder="Text input"></textarea>
-          </div>
-
-          <!-- Agreement field -->
-          <div class="modal-form-agreement">
-            <input type="checkbox" id="user-privacy" class="checkbox" />
-            <label for="user-privacy" class="checkbox-label">
-              <span class="checkbox-container">
-                <svg class="unchecked-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-checkbox"></use>
-                </svg>
-                <svg class="checked-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-checkbox-click"></use>
-                </svg>
-              </span>
-              <span>I accept the terms and conditions of the <a class="modal-form-link" href="#">Privacy
-                  Policy</a></span>
-            </label>
-          </div>
-
-          <!-- Send button -->
-          <button class="modal-form-button" type="submit" data-modal>
-            Send
-          </button>
+        <!-- Send button -->
+        <button class="modal-form-button" type="submit" data-modal>
+          Send
+        </button>
       </form>
 
     </div>
