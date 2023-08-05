@@ -1052,3 +1052,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--subtle-text-color);
 }
 
+.visually-hiddenchecked {
+  background-color: #404bbf;
+  fill: #F4F4FD;
+  border: none; 
+}
