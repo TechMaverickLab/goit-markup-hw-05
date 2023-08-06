@@ -1005,12 +1005,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.input:checked + .checkbox-label .unchecked-icon {
+input:checked + .checkbox-label .unchecked-icon {
   opacity: 0; 
 
 }
 
-.input:checked + .checkbox-label .checked-icon {
+input:checked + .checkbox-label .checked-icon {
   opacity: 1;
   background-color: #404bbf;
   fill: #F4F4FD;
