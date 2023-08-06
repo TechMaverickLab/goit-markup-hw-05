@@ -205,7 +205,7 @@ body {
   line-height: 1.5;
 }
 
-.menu li:first-child .nav-link,
+.menu li .nav-link,
 .address-list li .address-item {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
