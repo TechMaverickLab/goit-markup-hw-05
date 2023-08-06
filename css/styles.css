@@ -92,7 +92,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: var(--radius-butoon);
   border: none;
   cursor: pointer;
@@ -694,6 +693,7 @@ body {
 .filters-list:focus {
   color: var(--hero-text);
   background: var(--pressed-state-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filters-button {
