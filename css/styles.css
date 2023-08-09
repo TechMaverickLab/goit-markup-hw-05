@@ -971,7 +971,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 padding: 16px 32px 16px 32px;
-margin-top: 24px; 
+/* margin-top: 24px;  */
 min-width: 169px;
 height: 56px;
 font-family: "Roboto", sans-serif;
@@ -995,7 +995,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-form-button:disabled {
   background-color: var(--primary-brand-color);
-  /* cursor: not-allowed; */
+  cursor: not-allowed;
 }
 
 .checkbox-container {
@@ -1100,4 +1100,11 @@ input:focus + .checkbox-label .checked-icon {
 
 .checkbox {
   display: inline-flex;
+}
+
+.modal-form-button:hover,
+.modal-form-button:focus,
+.modal-form-button:disabled:hover,
+.modal-form-button:disabled:focus {
+    background-color: var(--pressed-state-color);
 }
